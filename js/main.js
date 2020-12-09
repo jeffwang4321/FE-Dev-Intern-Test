@@ -1,3 +1,4 @@
+// Function: btnsort()
 // Sort element by <div class="value">, and rewrite back into <div id="alpha-order">
 function btnsort() {
 
@@ -19,6 +20,7 @@ function btnsort() {
 }
 
 
+// Function: btnshuffle()
 // Shuffle element by <div class="value">, and rewrite back into <div id="alpha-order">
 function btnshuffle() {
    // Append value[i].innerHTML into templist
@@ -39,6 +41,7 @@ function btnshuffle() {
 }
 
 
+// Function: shufflearray(array)
 // Fisher yates algorithm from: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shufflearray(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -60,6 +63,7 @@ function shufflearray(array) {
 }
 
 
+// Function: togglemenu()
 // Toggle popup menu for mobile display
 function togglemenu() {
   if(document.getElementById('myheader').style.display == 'block'){
@@ -70,6 +74,7 @@ function togglemenu() {
 }
 
 
+// Function: resizecheck()
 // Reset header display when resizing back up
 function resizecheck() {
   if (document.getElementsByTagName('body')[0].clientWidth > 640) {
