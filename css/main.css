@@ -1,0 +1,164 @@
+/* All */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #E0F4FF;
+}
+
+
+/* header section*/
+#header-mobile{
+    display: none;
+}
+header{
+    background-color: #9CDBFD;
+    overflow: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 0 3%;
+}
+header a{
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.header-right {
+    float: right;
+}
+header a:hover{
+    background-color: #FBFEFF;
+}
+
+
+/* button section*/
+button{
+    background-color: #9CDBFD;
+    color: black;
+    cursor: pointer;
+    outline: none; 
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #FBFEFF; 
+}
+
+
+/* sortedSection section*/
+section{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 20px;
+}
+#alpha-order{
+	width: 100%;
+	height: 100%;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.value{
+    background-color: #FBFEFF;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+
+/* footer section*/
+footer{
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+footer a, footer p{
+    color: white;
+    text-decoration: none;
+}
+.footer-links{
+    padding: 10px;
+}
+.footer-links a{
+    padding: 15px;
+    font-size: 30px;
+}
+footer a:hover{
+    color: #0CACE3; 
+    text-decoration: underline;
+}
+
+
+
+/* Tablet Device - Viewport Size*/
+@media only screen and (max-width : 1024px){
+    section{
+        font-size: 20px;
+    }
+    #alpha-order{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Device - Viewport Size*/
+@media only screen and (max-width : 640px){
+    header{
+        padding: 0;
+    }
+    header a{
+        font-size: 20px;
+        width: 100%;
+        padding-left: 40px;
+    }
+    #header-mobile{
+        display: block;
+        background-color: black
+    }
+    .bx-menu{
+        color: white;
+        font-size: 40px;
+        padding: 5px 10px;
+    }
+    .bx-menu:hover{
+        color: #0CACE3;
+        cursor: pointer;
+    }
+    #alpha-order{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Scrollbar Effects */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darkgrey;
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}

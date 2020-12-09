@@ -1,0 +1,122 @@
+<!--
+  This is a take-home assignment for GameJobs.Ninja's frontend developer internship position. It
+  attempts to test your fundamental HTML, CSS, and JavaScript knowledge. See the comments below
+  for the specific tasks. Then see the comment at the end for how to submit your finished work to
+  us for review. Thanks ahead of time for doing this!
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jeff Wang"/>
+    <meta name="description" content="Jeff Wang - FE Dev Intern Test"/>
+    <title>FE Dev Intern Test</title>
+    <!--
+      Add CSS to make this page look professional.
+
+      You may NOT use any third-party CSS framework!
+    -->
+
+    <!-- Box Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body onresize="resizecheck()">
+    <!--
+      Add a header with "NATO Phonetic Alphabet" on the left that links to its Wikipedia article.
+      And on the right, add links to Wikipedia, the Wikimedia Foundation, and the Wikimedia
+      Foundation's Twitter account.
+    -->
+    <!-- ======================== HEADER/NAV bar ======================== -->
+    <div id="header-mobile"><i class='bx bx-menu' onclick="togglemenu()"></i></div>
+    <header id ="myheader">
+      <a href="https://en.wikipedia.org/wiki/NATO_phonetic_alphabet" target="_">NATO Phonetic Alphabet</a>
+      <div class="header-right">
+        <a href="https://en.wikipedia.org/wiki/Main_Page#about" target="_">Wikipedia</a>
+        <a href="https://wikimediafoundation.org/" target="_">Wikimedia Foundation</a>
+        <a href="https://twitter.com/Wikimedia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_">Wikimedia's Twitter</a>
+      </div>
+    </header>
+
+
+    <section>
+      <!--
+        Add CSS to create a responsive layout of these div elements that will display one column
+        on mobile devices, two columns on tablet devices, and three columns on desktops.
+
+        Reminder, you may NOT use any third-party CSS framework!
+      -->
+      <!-- <div id="sorted-section"> -->
+        <div id="alpha-order">
+          <div class="value">golf</div>
+          <div class="value">alpha</div>
+          <div class="value">bravo</div>
+          <div class="value">oscar</div>
+          <div class="value">victor</div>
+          <div class="value">echo</div>
+          <div class="value">foxtrot</div>
+          <div class="value">romeo</div>
+          <div class="value">tango</div>
+          <div class="value">charlie</div>
+          <div class="value">mike</div>
+          <div class="value">yankee</div>
+          <div class="value">hotel</div>
+          <div class="value">papa</div>
+          <div class="value">zulu</div>
+          <div class="value">india</div>
+          <div class="value">juliett</div>
+          <div class="value">kilo</div>
+          <div class="value">delta</div>
+          <div class="value">lima</div>
+          <div class="value">november</div>
+          <div class="value">quebec</div>
+          <div class="value">sierra</div>
+          <div class="value">uniform</div>
+          <div class="value">x-ray</div>
+          <div class="value">whiskey</div>
+        </div>
+      <!-- </div> -->
+      
+      <button onclick="btnsort()"><h2>Sort</h2></button>
+      <button onclick="btnshuffle()"><h2>Shuffle</h2></button>
+    </section>
+    
+
+    <!--
+      Add a footer with your name that links to your email address.
+    -->
+    <!-- ======================== FOOTER section ======================== -->
+    <footer>
+      <a href="mailto:jwa220@sfu.ca" target="_"><h2>JEFF WANG</h2></a>
+      <div class="footer-links">
+        <a href="mailto:jwa220@sfu.ca" target="_"><i class='bx bx-envelope'></i></a>
+        <a href="https://github.com/jeffwang4321" target="_"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/jeff-wang-b81731183/" target="_"><i class='bx bxl-linkedin-square'></i></a>
+      </div>
+      <p>© 2020 Jeff Wang All Rights Reserved</p>
+    </footer>
+
+
+    <!--
+        Add JS to make the Sort and Shuffle buttons functional, where clicking Sort will sort the
+        divs by content alphabetically, and clicking Shuffle will apply a random sort to the divs.
+
+        You may NOT use any third-party JS framework!
+      -->
+
+    <!-- ======================== MAIN JS ======================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+<!--
+  When you're done, commit your work to a publically accessible Git repo on GitHub, GitLab, or
+  BitBucket (preferrably GitHub). Then fill out this Google Form to submit the repo link to us for
+  review: https://forms.gle/MppfwvJpJ5nHApJy5
+-->
