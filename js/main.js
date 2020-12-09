@@ -75,9 +75,11 @@ function togglemenu() {
 
 
 // Function: resizecheck()
-// Reset header display when resizing back up
+// Reset header display on resizing 
 function resizecheck() {
   if (document.getElementsByTagName('body')[0].clientWidth > 640) {
     document.getElementById('myheader').style.display = 'block';
+  }else{
+    document.getElementById('myheader').style.display = 'none';
   }
 }
